@@ -27,7 +27,23 @@ longestString xs = foldl (\x acc -> if length acc > length x then acc else x) ""
 longestString' :: [String] -> String
 longestString' xs = foldl (\x acc -> if length x > length acc then x else acc) "" xs
 
--- 4.1
+-- 4.1.a
 -- longestString3
 -- Consume
 -- Produce
+longestString3 :: [String] -> String
+longestString3 xs = foldl (\x acc -> if length acc > length x then acc else x) "" xs
+
+-- 4.1.b
+-- longestString4
+-- Consume
+-- Produce
+longestString4 :: [String] -> String
+longestString4 xs = foldl (\x acc -> if length x > length acc then x else acc) "" xs
+
+-- 4.2
+-- longestStringHelper
+-- Consume
+-- Produce
+longestStringHelper :: (Int -> Int -> Bool) -> [String] -> String
+longestStringHelper f =
