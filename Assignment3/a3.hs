@@ -12,7 +12,8 @@ import Data.Char
 -- Consume a list of strings
 -- Produce/return a list of strings that start with a lower case letter
 onlyLowercase :: [String] -> [String]
-onlyLowercase = filter (\x -> ("" /= x) && (isLower $ head x));
+onlyLowercase =
+  filter (\x -> ("" /= x) && (isLower $ head x));
 
 -- 2.
 -- longestString
